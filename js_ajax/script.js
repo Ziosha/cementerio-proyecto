@@ -37,3 +37,4 @@ console.log(json);
 log.innerHTML = log_ren();
 nav.innerHTML = nav_ren();
 fot.innerHTML = fot_ren('Jazmine');
+
