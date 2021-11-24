@@ -6,9 +6,9 @@
     {
         $difuntos = new Difunto();
 
-        $nicho = $difuntos->getNichos(1);
+        $nichos = $difuntos->getNichos();
 
-        echo json_encode($nicho);
+        echo json_encode($nichos);
     }
     else
     {
@@ -16,11 +16,4 @@
 
         echo json_encode($error);
     }
-
-
-
-    
-    
-
-
 ?>

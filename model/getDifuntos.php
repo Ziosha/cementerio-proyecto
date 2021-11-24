@@ -101,7 +101,7 @@
             return $arrEnterrados;
         }
 
-        public function getNichos($idNicho)
+        private function getNicho($idNicho)
         {
             $nicho = array();
 
@@ -118,6 +118,22 @@
             ];
 
             return $nicho;
+        }
+
+        public function getNichos()
+        {
+            $counter = 0;
+
+            $nichos = array();
+            $nichos = ["Nicho" => array()];
+
+            for($i=1; $i<=10; $i++)
+            {
+                $nichos["Nicho"][$counter] = $this->getNicho($i);
+                $counter++;
+            }
+            
+            return $nichos;
         }
     }
 ?>
