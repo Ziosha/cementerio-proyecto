@@ -8,80 +8,261 @@
 	<link rel="icon" href="assets/imagenes/logitoCementerio.png" type="image/png" />
 	<link rel="stylesheet" href="assets/css/fondoYheader.css">
 	<link rel="stylesheet" href="assets/css/navbar.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/carrusel.css">
+	<link rel="stylesheet" href="/assets/css/nichos.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../cementerio-proyecto/assets/css/servicios.css">
+
 </head>
 <body>
 	<header>
-		<div>
+		<!-- <div>
 			<center><img  src="assets/imagenes/logoCorto.png" class="logo" width="70%" height="50%"></center>
-		</div>
+		</div> -->
 	</header>
-	<div class="navbar">
-		<div class="navbar-item"><a href="index.html">Hola</a></div>
-		<div class="navbar-item"><a href="index.html">Soy un</a></div>
-		<div class="navbar-item"><a href="index.html">Navbar</a></div>
-		<div><img class = "logito" src="assets/imagenes/logitoCementerio.png" alt=""></div>
+	
+	
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+	<div class="nav_cont">
+		<navbar class="nav_nav">
+			<img class="logito" src="assets/imagenes/logoCorto.png" alt="">
+			<div>
+				<a class="navbar-item" href="index.html">hola</a>
+				<a class="navbar-item" href="index.html">pinshes</a>
+				<a class="navbar-item" href="index.html">perros</a>
+			</div>
+		</navbar> 
 	</div>
+	<div class="carousel-indicators">
+	  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+	  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+	  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	</div>
+	
+	<div class="carousel-inner">
+	  <div class="carousel-item active">
+		<img src="assets/imagenes/angel-g54c25532f_1280.jpg" class="d-block w-100 " height="800px" alt="...">
+	  </div>
+	  <div class="carousel-item">
+		<img src="assets/imagenes/flowers-gf0e8bcac4_1280.jpg" class="d-block w-100 " height="800px" alt="...">
+	  </div>
+	  <div class="carousel-item">
+		<img src="assets/imagenes/graveyard-gdd8b8fc1e_1280.jpg" class="d-block w-100 " height="800px" alt="...">
+	  </div>
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	  <span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  <span class="visually-hidden">Next</span>
+	</button>
+  </div>
 
-
-	<div class="servicios">
-		<h1>Servicios del Cementerio</h1>
-		<div class="serv">
-			
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="background-image: url(https://media.istockphoto.com/photos/coffin-at-a-funeral-service-in-a-cemetery-picture-id155911571?k=20&m=155911571&s=612x612&w=0&h=b9E13t0uJvEMCQwqFd85EzF4bRw-bsmMWe3vWWQK-ck=)">
-						<div class="inner">
-							<p>Compra</p>
-              <span>comprar Nicho</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<a href="#" style="color: aliceblue; text-decoration: none;" ><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="background-image: url(../cementerio-proyecto/assets/imagenes/persona\ recibiendo\ dinero.png)">
-						<div class="inner">
-							<p>Renta</p>
-              <span>Rentas Nicho</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<a href="#" style="color: aliceblue; text-decoration: none;" ><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="background-image: url(https://fotografias.lasexta.com/clipping/cmsimages01/2020/04/02/CBC21A0F-6E9D-4A3E-8974-DE49F6EEDE3D/98.jpg?crop=1537,865,x116,y0&width=1900&height=1069&optimize=low&format=webply)">
-						<div class="inner">
-							<p>Pack guiño-guiño</p>
-              <span>Lorem ipsum</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<a href="#" style="color: aliceblue; text-decoration: none;" ><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p></a>
-						</div>
-					</div>
-				</div>
-			</div>
-
+  <div class="container">
+	<div class="">
+		<input type="checkbox" class="check1" >
+		<div class="caja">
+		<label for="check1" class="lbl1">1</label>
 		</div>
 	</div>
 
+	<div class="caja">2</div>
+	<div class="caja">3</div>
+	<div class="caja">4</div>
+	<div class="caja">5</div>
+	<div class="caja">6</div>
+	<div class="caja">7</div>
+	<div class="caja">8</div>
+	<div class="caja">9</div>
+	<div class="caja">10</div>
+	<div class="caja">11</div>
+	<div class="caja">12</div>
+	<div class="caja">13</div>
+	<div class="caja">14</div>
+	<div class="caja">15</div>
+	<div class="caja">16</div>
+	<div class="caja">17</div>
+	<div class="caja">18</div>
+	<div class="caja">19</div>
+	<div class="caja">20</div>
+</div>
+<!-- <script>
+	function cajota(caja) {
+		if(check1 == false){
+			Element.bg-color == "red";
+		}
+	}
+</script> -->
+<br>
+<br>
+<main>
+	<ul id="cards">
+		<li class="card" id="card_1">
+			<div class="card__content">
+				<div>
+					<h2>EMPLEADO 1</h2>
+					<p>Facundo Eric Garcia Paredes</p>
+					<p><a href="#popup" class="btn">DATOS PERSONALES</a></p>
+					<div id="popup" class="overlay">
+						<div id="popupBody">
+							<h2>DATOS</h2>
+							<a id="cerrar" href="#">&times;</a>
+							<div class="popupContent">
+								<p>ERIC alias el facundo :v</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<figure>
+					<img src="/assets/imagenes/perfil.jpg" alt="Image description">
+				</figure>
+			</div>
+		</li>
+		<li class="card" id="card_2">
+			<div class="card__content">
+				<div>
+					<h2>EMPLEADO 2</h2>
+					<p>Joaquin Salomon Garcia Peñaloza</p>
+					<p><a href="#top" class="btn btn--accent">Datos personales</a></p>
+				</div>
+				<figure>
+					<img src="/assets/imagenes/perfil.jpg" alt="Image description">
+				</figure>
+			</div>
+		</li>
+		<li class="card" id="card_3">
+			<div class="card__content">
+				<div>
+					<h2>EMPLEADO 3</h2>
+					<p>Juan Gustavo Bravo Ibañez</p>
+					<p><a href="#top" class="btn btn--accent">Datos personales</a></p>
+				</div>
+				<figure>
+					<img src="/assets/imagenes/perfil.jpg" alt="Image description">
+				</figure>
+			</div>
+		</li>
+		<li class="card" id="card_4">
+			<div class="card__content">
+				<div>
+					<h2>EMPLEADO 4</h2>
+					<p>Bryan alanoca Sanchez</p>
+					<p><a href="#top" class="btn btn--accent">Datos personales</a></p>
+				</div>
+				<figure>
+					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description">
+				</figure>
+			</div>
+		</li>
+	</ul>
+</main>
+<!-- <div class="container">
+	<div class="caja">1</div>
+	<div class="caja">2</div>
+	<div class="caja">3</div>
+	<div class="caja">4</div>
+	<div class="caja">5</div>
+	<div class="caja">6</div>
+	<div class="caja">7</div>
+	<div class="caja">8</div>
+	<div class="caja">9</div>
+	<div class="caja">10</div>
+	<div class="caja">11</div>
+	<div class="caja">12</div>
+	<div class="caja">13</div>
+	<div class="caja">14</div>
+	<div class="caja">15</div>
+	<div class="caja">16</div>
+	<div class="caja">17</div>
+	<div class="caja">18</div>
+	<div class="caja">19</div>
+	<div class="caja">20</div>
+</div> -->
 
+
+
+
+
+	<!-- <center>
+		<div class="imagenesBody">
+			
+		<ul>
+			<li> 
+				
+			  <img class="img1" src="assets/imagenes/angel-g54c25532f_1280.jpg" alt="" />
+			</li>
+			<li>
+			  <img class="img2" src="assets/imagenes/flowers-gf0e8bcac4_1280.jpg" alt="" />
+			</li>
+			<li>
+			  <img class="img3" src="assets/imagenes/graveyard-gdd8b8fc1e_1280.jpg" alt="" />
+			</li>
+			<li>
+			  <img class="img8" src="assets/imagenes/graveyard-gec83f7bcf_1280.jpg" alt="" />
+			</li>
+		  </ul>
+		</div>
+	  </center> -->
+
+
+<div class="servicios">
+	<h1>Servicios del Cementerio</h1>
+	<div class="serv">
+		
+		<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="container">
+				<div class="front" style="background-image: url(https://media.istockphoto.com/photos/coffin-at-a-funeral-service-in-a-cemetery-picture-id155911571?k=20&m=155911571&s=612x612&w=0&h=b9E13t0uJvEMCQwqFd85EzF4bRw-bsmMWe3vWWQK-ck=)">
+					<div class="inner">
+						<p>Compra</p>
+		  <span>comprar Nicho</span>
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						<a href="#" style="color: aliceblue; text-decoration: none;" ><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="container">
+				<div class="front" style="background-image: url(../cementerio-proyecto/assets/imagenes/persona\ recibiendo\ dinero.png)">
+					<div class="inner">
+						<p>Renta</p>
+		  <span>Rentas Nicho</span>
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						<a href="#" style="color: aliceblue; text-decoration: none;" ><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="container">
+				<div class="front" style="background-image: url(https://fotografias.lasexta.com/clipping/cmsimages01/2020/04/02/CBC21A0F-6E9D-4A3E-8974-DE49F6EEDE3D/98.jpg?crop=1537,865,x116,y0&width=1900&height=1069&optimize=low&format=webply)">
+					<div class="inner">
+						<p>Pack guiño-guiño</p>
+		  <span>Lorem ipsum</span>
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						<a href="#" style="color: aliceblue; text-decoration: none;" ><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
 
 	<div class="foote">
 		<footer >
@@ -97,5 +278,9 @@
 		</ul>
 		</footer>
 	</div>
+	<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
+
+</html>
