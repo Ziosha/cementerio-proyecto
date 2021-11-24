@@ -1,0 +1,40 @@
+
+.nichos{
+   width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+
+#buton_nichos{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boton{
+    width: 150px;
+    color: White;
+    background-color: rgba(90, 89, 89, 0.301);
+    border: none;
+    
+}
+
+#nichos_rend{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#cremacion{
+    width: 100%;
+    display: flex;
+    
+}
