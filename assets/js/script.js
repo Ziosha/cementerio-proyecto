@@ -5,26 +5,11 @@ const bnicho = document.getElementById ('buton_nichos'),
 
     
 
-const apiGetDescEmp = fetch("http://localhost/cementerio-proyecto/controller/api/apiGetDescEmp.php");
-apiGetDescEmp.then (resp => { resp.json()
-              .then (data =>{
-                const empleados = data;
-                console.log(empleados);
-              })
-})
-
-const apiGetInfoEmp = fetch("http://localhost/cementerio-proyecto/controller/api/apiGetInfoEmp.php");
-apiGetInfoEmp.then (resp =>{ resp.json()
-             .then (data =>{
-                 const infoEmpleados = data;
-                 console.log(infoEmpleados);
-             })  
-})
 
 const apiGetNicho = fetch("http://localhost/cementerio-proyecto/controller/api/apiGetNIcho.php")
 apiGetNicho.then (resp =>{ resp.json() 
              .then (data =>{ 
-                const {Nicho} = data; console.log(Nicho);
+                const {Nicho} = data; 
                 for (const x in Nicho ){
                     if(x <= 9){
                         bnicho.innerHTML = bnicho.innerHTML + boton_nicho(x);
@@ -38,7 +23,6 @@ const ren_nicho = (x) => {
     apiGetNichos.then (r =>{r.json()
                 .then(dat => {
                     const {Nicho} = dat
-                    console.log(Nicho[x]); 
                     let {Cremados} = Nicho[x];
                     let {Sarcofagos} = Nicho[x];
                     if (Nicho[x].Estado == "Comprado" || Nicho[x].Estado == "Rentado"){
@@ -54,7 +38,6 @@ const ren_nicho = (x) => {
                                     rsarcofago.innerHTML= rsarcofago.innerHTML + ren_sarcofagoV(Nombres, ApellidoP, ApellidoM, Estado, FechaDef);
                                 }
                             },300)
-                        console.log(Nicho[x].Estado);
                     } else {
                         rcremacion.innerHTML = " ";
                         rsarcofago.innerHTML = " ";
@@ -66,10 +49,7 @@ const ren_nicho = (x) => {
                                 rsarcofago.innerHTML= rsarcofago.innerHTML + ren_sarcofagoR("Disponible Cumpita");
                             }
                         },300)
-                        console.log("Orale a comoprar putito");
                     }
-
-
                 }) 
             }) .catch(console.warn);
  }
