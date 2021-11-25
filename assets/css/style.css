@@ -380,6 +380,7 @@ h1{
 
 /* ----------------------------------footer---------------------------------- */
   .foote{
+
     background-color: rgba(0, 0, 0, 0.842);
     width: 100%;
   }
@@ -387,14 +388,14 @@ h1{
     margin-top: 30px;
   }
 
-  footer {
+footer {
     display:flex;
     width: 100%;
     margin: auto;
     color: #fff;
     justify-content:space-between;
   }
-  footer a{
+footer a{
       text-decoration: none;
       color: #fff;
       font-size:100%;
@@ -469,6 +470,7 @@ h1{
   
   ul li:nth-child(5) a:hover .fab {
     color: #e4405f;
+
     background: rgba(0, 0, 0, 0.842);
   }
 /*-------------------------------------------------------------------------------texto sobre imagen------------------------------------------------------*/
@@ -488,3 +490,4 @@ h1{
   text-align: left;
   font-size: 3vw;
 }
+
