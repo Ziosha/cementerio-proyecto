@@ -471,5 +471,20 @@ h1{
     color: #e4405f;
     background: rgba(0, 0, 0, 0.842);
   }
-
-  
+/*-------------------------------------------------------------------------------texto sobre imagen------------------------------------------------------*/
+.imaginacion{
+  position:relative;
+  display:inline-block;
+  border: 100%;
+  display: flex;
+}
+.texto-encima{
+  color: white;
+  position: absolute;
+  font-size: smaller;
+  top: 4px;
+  left: 10px;
+  margin: 100px 20px 0 10px;
+  text-align: left;
+  font-size: 3vw;
+}
