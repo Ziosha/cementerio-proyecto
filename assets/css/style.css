@@ -78,11 +78,11 @@ body{
 
 .texto-info h5{
   font-size: 2.5em;
-  
+  font-weight: bold;
 }
 
 .texto-info p{
-  color: #29280e;
+  color: #ffda44;
   font-size: 1.5em;
 }
 
