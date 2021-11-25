@@ -363,3 +363,39 @@
   ul li:nth-child(5) a:hover .fab {
     color: #e4405f;
   }
+
+
+/*No me mates Gus :,,,C*/
+
+  .nav_cont{
+    background-color: rgba(0, 0, 0, 0.377);
+  }
+  
+  .logito {
+    width: 15%;
+  }
+  .nav_nav{
+    width: 85%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: auto;
+  }
+  
+  .navbar-item{
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+    margin-left: 1em;
+    padding: 30px;
+  }
+  .navbar-item:hover{
+    color: black;
+    background: white;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .menucito{
+    margin-top: 2%;
+  }
