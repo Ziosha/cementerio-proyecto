@@ -174,7 +174,7 @@ const ren_sarcofagoR = (dispo) => {
 
 
 const boton_nicho = (x) => {
-  return `  <button class="boton" style="box-shadow: 0 0 30px rgba(255, 255, 255, 0.419), inset 0 0 1px rgba(255, 255, 255, 0.055);" onclick="ren_nicho(${x})"  >Nicho A - ${x} </button>
+  return `  <button class="boton" style="box-shadow: 0 0 30px rgba(120, 40, 140, 0.619), inset 0 0 1px rgba(255, 255, 255, 0.055);" onclick="ren_nicho(${x})"  >Nicho A - ${x} </button>
   `
 }
 
