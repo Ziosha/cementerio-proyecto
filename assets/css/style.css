@@ -76,6 +76,28 @@ body{
   width: 100%;
 }
 
+.texto-info h5{
+  font-size: 2.5em;
+  
+}
+
+.texto-info p{
+  color: #29280e;
+  font-size: 1.5em;
+}
+
+@media only screen and(min-width: 768px){
+  .texto-info h5{
+    font-size: 1.5em;
+    
+  }
+  
+  .texto-info p{
+    font-size: 0.5em;
+  }
+}
+
+
 /* ---------------------------------tarjetas trabajadores--------------------------------- */
 
 
