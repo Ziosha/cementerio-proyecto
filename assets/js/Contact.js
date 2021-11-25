@@ -6,8 +6,8 @@ apiGetDescEmp.then (resp => { resp.json()
                   let a = 0;
                 for (const x of data){
                     a++;
-                    let {Nombres, ApellidP, ApellidoM, Cargo, Celular, Descri} = x;
-                    card.innerHTML = card.innerHTML + ren_card(Nombres, ApellidP, ApellidoM, Cargo, Celular, Descri, a);
+                    let {Nombres, ApellidoP, ApellidoM, Cargo, Celular, Descri} = x;
+                    card.innerHTML = card.innerHTML + ren_card(Nombres, ApellidoP, ApellidoM, Cargo, Celular, Descri, a);
                 }
               })
 })
@@ -25,6 +25,6 @@ const ren_card = (Nom, ApP, ApM, Car, Cel, Des, a) =>{
     return `<div class="card">
 	<h2 class="card-title">Vendedor ${a}</h2>
 	<img src="assets/imagenes/perfil.jpg" alt="">
-	<p class="card-desc">Nombre : ${Nom} Apellidos: ${ApP}${ApM}  Cargo: ${Car}  Celular: ${Cel} Descripcion: ${Des}</p>
+	<p class="card-desc">Nombre : ${Nom} Apellidos: ${ApP ,ApM}  Cargo: ${Car}  Celular: ${Cel} Descripcion: ${Des}</p>
   </div>`
 }
