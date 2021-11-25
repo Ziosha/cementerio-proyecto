@@ -5,7 +5,7 @@ const bnicho = document.getElementById ('buton_nichos'),
 
     
 
-const apiGetDescEmp = fetch("http://localhost/cementerio-proyecto/controller/api/apiGetDescEmp.php");
+const apiGetDescEmp = fetch("http://localhost:8090/PROYECTO-CEMENTERIO/cementerio-proyecto/controller/api/apiGetDescEmp.php");
 apiGetDescEmp.then (resp => { resp.json()
               .then (data =>{
                 const empleados = data;
@@ -13,7 +13,7 @@ apiGetDescEmp.then (resp => { resp.json()
               })
 })
 
-const apiGetInfoEmp = fetch("http://localhost/cementerio-proyecto/controller/api/apiGetInfoEmp.php");
+const apiGetInfoEmp = fetch("http://localhost:8090/PROYECTO-CEMENTERIO/cementerio-proyecto/controller/api/apiGetInfoEmp.php");
 apiGetInfoEmp.then (resp =>{ resp.json()
              .then (data =>{
                  const infoEmpleados = data;
@@ -21,7 +21,7 @@ apiGetInfoEmp.then (resp =>{ resp.json()
              })  
 })
 
-const apiGetNicho = fetch("http://localhost/cementerio-proyecto/controller/api/apiGetNIcho.php")
+const apiGetNicho = fetch("http://localhost:8090/PROYECTO-CEMENTERIO/cementerio-proyecto/controller/api/apiGetNIcho.php")
 apiGetNicho.then (resp =>{ resp.json() 
              .then (data =>{ 
                 const {Nicho} = data; console.log(Nicho);
@@ -34,7 +34,7 @@ apiGetNicho.then (resp =>{ resp.json()
         })
         
 const ren_nicho = (x) => {
-    const apiGetNichos = fetch("http://localhost/cementerio-proyecto/controller/api/apiGetNIcho.php")
+    const apiGetNichos = fetch("http://localhost:8090/PROYECTO-CEMENTERIO/cementerio-proyecto/controller/api/apiGetNIcho.php")
     apiGetNichos.then (r =>{r.json()
                 .then(dat => {
                     const {Nicho} = dat
