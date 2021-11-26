@@ -12,15 +12,6 @@ apiGetDescEmp.then (resp => { resp.json()
               })
 })
 
-const apiGetInfoEmp = fetch("http://localhost/cementerio-proyecto/controller/api/apiGetInfoEmp.php");
-apiGetInfoEmp.then (resp =>{ resp.json()
-             .then (data =>{
-                 const infoEmpleados = data;
-                 
-             })  
-})
-
-
 const ren_card = (Nom, ApP, ApM, Car, Cel, Des, a) =>{
     return `<div class="card">
 	<h2 class="card-title">Vendedor ${a}</h2>
